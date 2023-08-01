@@ -1,0 +1,77 @@
+.Featured-Container {
+  background-color: #f0f0f0;
+}
+.feature-texet {
+  color: #861802;
+  letter-spacing: 5px;
+}
+.card {
+  text-align: center;
+  cursor: pointer;
+}
+
+.btnFEATURED {
+  border: #861802 !important;
+  background-color: #861802 !important;
+}
+.btnFEATURED:hover {
+  background-color: #da310f !important;
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+.quickView {
+  padding: 8px;
+  font-size: 25px !important;
+  color: #fff;
+  background-color: rgba(87, 25, 25, 0.6);
+  position: absolute;
+  bottom: 180px;
+  opacity: 0;
+  height: 0px;
+  width: 100%;
+  transition: all 0.5s;
+}
+.card:hover .quickView {
+  opacity: 1;
+  height: 10%;
+  bottom: 165px;
+}
+
+.feature-btn {
+  border: 1px solid #861802 !important;
+  border-radius: 30px !important;
+  color: #861802 !important;
+  font-size: 20px !important;
+  padding: 10px 20px !important;
+  font-family: sans-serif !important;
+  margin-bottom: 150px;
+}
+.feature-btn:hover {
+  background-color: #861802 !important;
+  color: #fff !important;
+  transition: all 0.5s;
+}
+
+
+
+@media screen and (max-width:1200px)  and (min-width:990px){  
+  .Featured-col{
+    width: 30% !important;
+  } 
+}
+
+@media screen and (max-width:990px)  and (min-width:700px){
+  
+  .Featured-col{
+    width: 50% !important;
+  } 
+}
+
+@media screen and (max-width:400px) {
+  
+  .Featured-Container{
+    padding: 0px !important;
+  }
+  
+}

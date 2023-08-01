@@ -1,0 +1,86 @@
+.container-Home {
+  position: relative;
+  top: 50px;
+  text-align: center;
+}
+
+.textHome-div {
+  font-size: 80px;
+  font-weight: bolder;
+  letter-spacing: 4px;
+  color: #ffffff !important;
+  position: absolute;
+  top: 40%;
+  left: 30%;
+}
+
+.Home-button {
+  border: 1px solid #fff !important;
+  border-radius: 30px !important;
+  color: #ffffff !important;
+  font-size: 20px !important;
+  padding: 10px 20px !important;
+}
+
+.Home-button:hover {
+  background-color: #a67a4b !important;
+  border-color: #a67a4b !important;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 990px) {
+  .textHome-div {
+    font-size: 65px;
+    top: 40%;
+  }
+}
+
+@media screen and (max-width: 990px) and (min-width: 770px) {
+  .textHome-div {
+    font-size: 50px;
+    top: 35%;
+    letter-spacing: 3px;
+  }
+  .container-Home {
+    top: 75px;
+  }
+}
+@media screen and (max-width: 770px) and (min-width: 600px) {
+  .textHome-div {
+    font-size: 35px;
+    top: 35%;
+    letter-spacing: 2px;
+  }
+  .container-Home {
+    top: 75px;
+  }
+}
+
+@media screen and (max-width: 600px) and (min-width: 400px) {
+  .textHome-div {
+    font-size: 30px;
+    top: 30%;
+    letter-spacing: 1px;
+  }
+  .container-Home {
+    top: 75px;
+  }
+
+  .Home-button {
+    font-size: 15px !important;
+    padding: 5px 10px !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  .textHome-div {
+    font-size: 20px;
+    top: 30%;
+    letter-spacing: 1px;
+  }
+  .container-Home {
+    top: 75px;
+  }
+  .Home-button {
+    font-size: 15px !important;
+    padding: 5px 10px !important;
+  }
+}

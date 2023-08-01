@@ -1,0 +1,36 @@
+import React from "react";
+import firstImg from "../images/story.jpg";
+import secondImg from "../images/blog.jpg";
+import { Link } from "react-router-dom";
+import './StoryNBlog.css'
+const StoryNBlog = () => {
+  return (
+    <>
+      
+    <div className="aboutContainer">
+        <div className="row gy-3">
+          <div className="col-md-6">
+            <div className="first-img position-relative">
+              <img className=" w-100" src={secondImg} alt="" />
+              <Link className="StoryWord" to="/about">
+                <h2 className="our-story">Our Story</h2>
+              </Link>
+            </div>
+          </div>
+
+          {/* ====================================================== */}
+          <div className="col-md-6">
+            <div className="second-img position-relative">
+              <img className=" w-100" src={firstImg} alt="" />
+             <Link className="StoryWord">
+              <h2 className="our-blog">Our Blog</h2>
+             </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default StoryNBlog;

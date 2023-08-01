@@ -1,0 +1,73 @@
+.aboutContainer{
+  margin-top: 120px;
+}
+
+.our-story {
+  transition: all 0.5s;  
+  cursor: pointer;
+  font-size: 100px;
+  font-weight: bolder;
+  position: absolute;
+  left: 15%;
+  top: 30%;
+}
+
+.our-blog {
+  transition: all 0.5s;
+  cursor: pointer;
+  font-size: 100px;
+  font-weight: bolder;
+  position: absolute;
+  top: 30%;
+  left: 15%;
+}
+.StoryWord {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+.our-story:hover {
+  color: #a67a4b !important;
+}
+.our-blog:hover {
+  color: #a67a4b !important;
+}
+ 
+
+/* ======================================= 500px ========= */
+@media screen and (max-width: 1200px) and (min-width: 990px) {
+  .our-story {
+    font-size: 80px;
+  }
+  .our-blog {
+    font-size: 80px;
+  }
+}
+@media screen and (max-width: 990px) and (min-width: 770px) {
+  .our-story {
+    font-size: 60px;
+  }
+  .our-blog {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 770px) and (min-width: 500px) {
+  .our-story {
+    font-size: 80px;
+    left: 5%;
+  }
+  .our-blog {
+    font-size: 80px;
+    left: 5%;
+  }
+}
+ 
+
+/* ======================================= 500px ========= */
+@media screen and (max-width: 500px) {
+  .our-story {
+    font-size: 90px;
+  }
+  .our-blog {
+    font-size: 90px;
+  }
+}

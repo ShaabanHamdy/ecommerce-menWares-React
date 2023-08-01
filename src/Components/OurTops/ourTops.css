@@ -1,0 +1,52 @@
+.OurContainer {
+  background-color: #f0f0f0;
+}
+.Categories{
+  margin-top: 100px;
+}
+
+.ourTops {
+  position: relative;
+  cursor: pointer;
+  
+}
+
+.topsImages{
+    border: 0px solid;
+    border-radius: 10px;
+}
+.overLayer {
+    border: 0px solid;
+    border-radius: 10px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f2a494;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif !important;
+  letter-spacing: 5px;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: all 1s;
+}
+.ourTops:hover .overLayer {
+  transform: scale(1);
+  opacity: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f2a494;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif !important;
+  letter-spacing: 5px;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  inset: 0;
+}
