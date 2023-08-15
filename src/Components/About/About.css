@@ -1,0 +1,68 @@
+.marginTopAbout {
+  margin-top: 130px;
+}
+
+.paragraphAbout {
+  color: #f0f0f0 !important;
+}
+
+.colParagraph {
+  padding: 40px;
+  margin: 50px 0px 0px 50px;
+}
+
+.ColImg {
+  background-image: url(../images/blog.png);
+  background-attachment: fixed;
+  height: 100vh;
+}
+.rowAbout {
+  background: #222a31 !important;
+}
+
+
+@media screen  and (max-width : 1400px) and (min-width : 850px){
+  .ColImg {
+    background-size: contain;
+    background-position: 100% 100%;
+  }
+  .divParagraph{
+    padding: 10px !important;
+  }
+  .colParagraph {
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+@media screen  and (max-width : 850px) and (min-width : 500px){
+  .ColImg {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100% 100%;
+  }
+  .divParagraph{
+    padding: 10px !important;
+  }
+  .colParagraph {
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+@media screen  and (max-width : 500px) and (min-width : 300px){
+  .ColImg {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100% 100%;
+    height: 200px !important;
+  }
+  .divParagraph{
+    padding: 10px !important;
+  }
+  .colParagraph {
+    
+    padding: 0px;
+    margin: 0px;
+  }
+}

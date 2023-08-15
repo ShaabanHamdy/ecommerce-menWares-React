@@ -11,7 +11,7 @@ const OurTops = () => {
     <>
       <div className="container-fluid my-5 OurContainer">
 
-          <h2 className="text-center feature-texet my-5 p-3">Categories</h2>
+          <h2 className="text-center feature-text my-5 p-3">Categories</h2>
         <div className="row gy-5 text-center">
           <div className="col-md-4">
             <div className="ourTops">

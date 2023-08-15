@@ -4,8 +4,6 @@ const Products =
     title: "Pullover Sweater",
     price: 85,
     description: "A description",
-    id: 1,
-    qty: 1 ,
     images: "https://m.media-amazon.com/images/I/71BfFi76JML._AC_SL1500_.jpg",
     image1: "https://m.media-amazon.com/images/I/71hD-lmIOXL._AC_SL1500_.jpg",
   },
@@ -110,6 +108,7 @@ const Products =
   },
 
 ]
+// Neck Pullover Sweater
 
 
   export default Products

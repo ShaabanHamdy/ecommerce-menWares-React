@@ -1,6 +1,5 @@
 .container-Home {
   position: relative;
-  top: 50px;
   text-align: center;
 }
 
@@ -20,6 +19,10 @@
   color: #ffffff !important;
   font-size: 20px !important;
   padding: 10px 20px !important;
+  -webkit-border-radius: 30px !important;
+  -moz-border-radius: 30px !important;
+  -ms-border-radius: 30px !important;
+  -o-border-radius: 30px !important;
 }
 
 .Home-button:hover {

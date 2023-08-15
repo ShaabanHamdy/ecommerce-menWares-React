@@ -1,72 +1,59 @@
-import React, { useContext } from "react";
-import { ContainerContext } from "../context/context";
+import React from "react";
+import imag from "../images/84770f_b0d1ca3c05e149bba7b5162140ff3356-mv2 .jpg";
 
+import "./ViewCart.css";
 const ViewCart = () => {
-  const {
-    decrement,
-    addToSideCart,
-    clickBtnStore,
-    removeCart,
-  } = useContext(ContainerContext);
-  const totalPrice = addToSideCart.reduce((x, y) => x + y.qty * y.price, 0);
-
   return (
     <>
-      <div className="viweCart">
-        <div className="mt-5 allSideCartbellowimg">
-          <div className="container">
-            <div className="row ">
-              {addToSideCart.map((elm, index) => (
-                <>
-                  <hr />
+      <div className="container viewContainer">
+        <div className="row">
+          <div className="col-md-6">
+            <div className="CartImage d-flex">
+              <div className="w-50">
+                <img className="imageSubCategory" src={imag} alt="" />
+                <img className="imageSubCategory" src={imag} alt="" />
+                <img className="imageSubCategory" src={imag} alt="" />
+                <img className="imageSubCategory" src={imag} alt="" />
+              </div>
+              <div className="w-100">
+                <img className="imageCategories" src={imag} alt="" />
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4">
+            <div className=" m-5 CartContent">
+              <p>title</p>
+              <p> before price</p>
+              <p>price</p>
+              <p>des</p>
+              <p>saving</p>
+            </div>
+            <hr />
+            <div className="my-3">
+              <p className="me-2">Size : </p>
+              <select
+                className="form-select w-25 "
+                aria-label="Default select example"
+              >
+                <option selected>Size</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
 
-                  <div key={index} className="col-md-4">
-                    <img
-                      height={150}
-                      className="w-25 my-2"
-                      src={elm.images}
-                      alt=""
-                    />
-                    <span className="mx-5 titleViewCart">{elm.title}</span>
-                  </div>
+            <div className="my-3 align-items-center d-flex">
+              <div className="w-25">
+                <p className="">Quantity </p>
 
-                  <div className="col-md-4">
-                    <div className="bothTrashNum">
-                      <div className="divBtnCart">
-                          <button    onClick={() => clickBtnStore(elm)} 
-                             className="b-Cart"  >    +  </button>
-                        <span>{elm.qty}</span>
-                        <button   onClick={() => decrement(elm)}   className="b-Cart" >   - </button>
-                      </div>
-                      <div className="mx-5  text-danger">
-                        <i
-                          onClick={() => removeCart(elm)}
-                          className="fas fa-trash-can"
-                        ></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-4  d-flex align-items-center">
-                    <div className=" m-auto">
-                      <p className="">${elm.price}</p>
-                    </div>
-                  </div>
-                </>
-              ))}
-              <hr />
+                <input className="form-control" type="number" value="1" />
+              </div>
+              <div className="w-100">
+                <button className=" ms-5 w-75 btn btn-primary">Add to cart</button>
+              </div>
             </div>
           </div>
         </div>
-        {/* ======================================== */}
-        <div className="foterSideCart float-end me-5 pe-5">
-          <div className="me-5 pe-5 dddd">
-            <h2 className="totalPrice">Subtotal</h2>
-            <p className="fw-bold totalPrice">${totalPrice.toFixed(2)}</p>
-          </div>
-        </div>
-        
-        <div className="clearfix"></div>
-        <hr />
       </div>
     </>
   );

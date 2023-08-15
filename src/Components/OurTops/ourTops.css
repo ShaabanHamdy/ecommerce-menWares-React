@@ -14,25 +14,41 @@
 .topsImages{
     border: 0px solid;
     border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 .overLayer {
     border: 0px solid;
     border-radius: 10px;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #f2a494;
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif !important;
-  letter-spacing: 5px;
-  font-weight: bold;
-  background-color: rgba(0, 0, 0, 0.6);
-  position: absolute;
-  inset: 0;
-  opacity: 0;
-  transform: scale(0.5);
-  transition: all 1s;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f2a494;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif !important;
+    letter-spacing: 5px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all 1s;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
 }
 .ourTops:hover .overLayer {
   transform: scale(1);
@@ -49,4 +65,8 @@
   background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
   inset: 0;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
 }

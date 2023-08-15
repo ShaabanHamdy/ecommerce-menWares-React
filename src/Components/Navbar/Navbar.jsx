@@ -9,11 +9,13 @@ import './Navbar.Modules.css';
 const Navbar = () => {
   const { addToSideCart, sideBar, setSideBar } =
     useContext(ContainerContext);
- const  countNavbar = addToSideCart.reduce((x, y) => x + y.qty, 0);
+ const  countNavbar = addToSideCart.reduce((x, y) => x + y.quantity, 0);
 
   return (
     <>
-      <nav className=" navbar navbar-expand-lg navbar-light">
+
+     <div className="NavContainer bg-danger">
+     <nav className=" navbar navbar-expand-lg navbar-light">
         <div className="container  mb-2">
           <div className="logo-img ">
             <a className="navbar-brand ">
@@ -93,6 +95,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
+     </div>
     </>
   );
 };

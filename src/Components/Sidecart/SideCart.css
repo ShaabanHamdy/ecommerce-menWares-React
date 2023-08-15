@@ -1,0 +1,66 @@
+.sahmIcon {
+  cursor: pointer;
+  font-size: 2rem;
+  position: absolute;
+  left: 5px;
+  bottom: 15px;
+}
+.textSideCart {
+  color: #fff;
+  background-color: #000;
+}
+
+.divBtnCart {
+  font-size: 14px;
+  background-color: #f0f0f0;
+  color: #000;
+  margin: 10px;
+  text-align: center;
+  border: 5px solid #f0f0f0;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.b-Cart {
+  border: none;
+  border-radius: 30px;
+  color: #959391 !important;
+  padding: 0px 10px;
+  margin: 0px 7px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  font-size: 20px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.b-Cart:hover {
+  border-radius: 30px;
+  transform: scale(1.1);
+  color: #0c0b0a !important;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  
+}
+.footerSideCart {
+  padding: 7px;
+}
+.trachCart i {
+  
+  text-align: center;
+  color: rgb(209, 60, 60);
+  /* margin: 15px 0px 0px 20px; */
+  cursor: pointer;
+}

@@ -2,33 +2,32 @@ import React, { useContext } from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom";
-import Products from "../Api";
+import "../FeaturedProducts/FeaturedProducts"
 import { ContainerContext } from "../context/context";
-import './Store';
 const Store = () => {
-  const { clickBtnStore } = useContext(ContainerContext);
+  const { clickBtnStore ,apiData} = useContext(ContainerContext);
   return (
     <>
       <div className="container-fluid p-5 mt-5 Featured-Container">
-        <h5 className=" text-center feature-texet">FEATURED PRODUCTS</h5>
+        <h5 className=" text-center feature-text">All PRODUCTS</h5>
         <div className="row gy-3 g-x5 p-5 justify-content-center">
-          {Products.map((product, index) => (
-            <div key={index} className="col-md-4 Featured-col m-2 ">
-              <div className="card cadrStore">
+          {apiData.map((product, index) => (
+            <div key={index} className="col-md-3 Featured-col ">
+              <div className="card cardStore">
                 <Card>
                 <Link to='/ViewCart'>
                   <Card.Img
                     height={300}
-                    onMouseOver={(e) => (e.currentTarget.src = product.image1)}
-                    onMouseOut={(e) => (e.currentTarget.src = product.images)}
-                    src={product.images}
+                    onMouseOver={(e) => (e.currentTarget.src = product.mainImage2)}
+                    onMouseOut={(e) => (e.currentTarget.src = product.mainImage)}
+                    src={product.mainImage}
                   />
                   <div className="quickView">
                     <p>View</p>
                   </div>
                   </Link>
                   <Card.Body>
-                    <Card.Title className="mx-height-Store">
+                    <Card.Title className="features-title">
                       {product.title}
                     </Card.Title>
                     <Card.Text>${product.price}</Card.Text>

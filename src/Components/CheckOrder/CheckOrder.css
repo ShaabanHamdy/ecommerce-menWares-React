@@ -1,0 +1,24 @@
+.side {
+  position: fixed !important;
+  right: -350px;
+  width: 350px;
+  background-color: #fff;
+  top: 0;
+  bottom: 0;
+  z-index: 999 !important;
+  color: #000;
+  overflow: scroll;
+}
+.CheckOrder {
+  margin-top: 150px;
+}
+
+.fa-trash-can {
+  cursor: pointer;
+}
+.bothTrashNum {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}

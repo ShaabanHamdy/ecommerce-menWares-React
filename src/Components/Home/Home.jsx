@@ -1,5 +1,5 @@
 import React from "react";
-import Courselhome from "../CarouselHome/CarouselHome";
+import CarouselHome from "../CarouselHome/CarouselHome";
 
 import StoryNBlog from "../StoryNBlog/StoryNBlog";
 import FeaturedProducts from "../FeaturedProducts/FeaturedProducts";
@@ -9,7 +9,7 @@ import SecuredPayments from "../SecuredPayments/SecuredPayments";
 const Home = () => {
   return (
     <>
-        <Courselhome />
+        <CarouselHome />
       <div className="my-5">
         <StoryNBlog />
       </div>

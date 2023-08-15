@@ -1,14 +1,15 @@
 import React from "react";
 
+import './About.css'
 const About = () => {
   return (
     <>
     <div className="marginTopAbout">
       <div className="container-fluid">
         <div className="row rowAbout">
-          <div className="col-md-6 p-5  d-flex justify-content-center align-items-center">
-            <div className="colPragraph">
-              <p className="pragraphAbote ">
+          <div className="col-md-6 p-5 divParagraph d-flex justify-content-center align-items-center">
+            <div className="colParagraph">
+              <p className="paragraphAbout ">
                 The Story of Giovanni Menswear
                 <br /> <br />
                 <br />

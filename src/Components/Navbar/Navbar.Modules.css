@@ -1,7 +1,11 @@
+.NavContainer{
+  margin-bottom: 100px;
+}
 .navbar-expand-lg {
   position: fixed !important;
   top: 0px;
-  width: 100%;
+  left: 0;
+  right: 0;
   height: 100px;
   z-index: 999;
   background-color: #fff !important;
@@ -20,9 +24,7 @@
   line-height: 0px !important;
   font-weight: bold;
 }
-.logo-img {
-  margin-left: 100px;
-}
+
 .navbar-brand img {
   margin-left: 50px;
 }
@@ -39,19 +41,14 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 990px) {
-  .logo-img {
-    font-size: 10px !important;
-    margin-left: 20px;
-  }
-.navbar-expand-lg{
-  height: fit-content;
-}
-  .logo {
-    font-size: 15px !important;
-  }
 
+
+@media screen and (max-width: 990px) {
+  .navbar-expand-lg {
+    height: fit-content;
+  }
   #navbar-button {
     background-color: #a12b10;
+    margin-right: 15px;
   }
 }
