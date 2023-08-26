@@ -14,27 +14,23 @@ const SideCart = () => {
     clickBtnStore,
     removeCart,
   } = useContext(ContainerContext);
-  const deleteAlert = (elm)=>{
+  const deleteAlert = (elm) => {
     Swal.fire({
-      title: 'Are you sure?',
+      title: "Are you sure?",
       text: "You won't be able to revert this!",
-      icon: 'warning',
+      icon: "warning",
       showCancelButton: true,
-      confirmButtonColor: '#3085d6',
-      cancelButtonColor: '#d33',
-      confirmButtonText: 'Yes, delete it!'
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        Swal.fire(
-          'Deleted!',
-          'Your file has been deleted.',
-          'success'
-        )
-        removeCart(elm)
+        Swal.fire("Deleted!", "Your file has been deleted.", "success");
+        removeCart(elm);
       }
-    })
-  }
-  
+    });
+  };
+
   const totalPrice = addToSideCart.reduce(
     (x, y) => x + y.quantity * y.price,
     0
@@ -42,7 +38,7 @@ const SideCart = () => {
   return (
     <>
       <motion.div
-        animate={{ x: sideBar ? -350 : 0 }}
+        animate={{ x: sideBar ? -400 : 0 }}
         transition={{ duration: 1 }}
         className="side"
       >
@@ -63,11 +59,18 @@ const SideCart = () => {
 
         <div className="mt-5">
           {addToSideCart.map((elm, index) => (
-            <div key={index} className="row m-1">
-              <div className="col-md-6">
+            <div key={index} className="row m-1 colSidCart">
+              <div className=" ">
+                <i
+                  onClick={() => deleteAlert(elm)}
+                  className="fas fa-xmark m-3 small border border-1 float-end"
+                ></i>
+              </div>
+              <div className="clearfix"></div>
+              <div className="col-md-6 ">
                 <img
                   height={200}
-                  className="w-100 my-2"
+                  className="w-100 imageSideCart my-2"
                   src={elm.mainImage}
                   alt=""
                 />
@@ -77,7 +80,7 @@ const SideCart = () => {
                 <div>
                   <p className="mx-1">{elm.title}</p>
                   <p className="mx-1">${elm.price}</p>
-                  <div className="divBtnCart">
+                  <div className="w-100 mb-5 divBtnCart">
                     <button
                       onClick={() => clickBtnStore(elm)}
                       className="b-Cart"
@@ -89,13 +92,12 @@ const SideCart = () => {
                       -
                     </button>
                   </div>
-                  <div className="trachCart w-100 text-center my-5">
+                  {/* <div className="trachCart w-100 text-center my-5">
                     <i
                       onClick={() => deleteAlert(elm)}
-                      // onClick={() => removeCart(elm)}
                       className="fas fa-trash-can"
                     ></i>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <hr />

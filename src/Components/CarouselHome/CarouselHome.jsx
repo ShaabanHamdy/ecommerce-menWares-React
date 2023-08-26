@@ -8,7 +8,7 @@ import './CarouselHome.css'
 const CarouselHome = () => {
   return (
     <>
-      <div className="container-Home my-5">
+      <div className="container-Home  my-5">
         <div className="row">
           <div className="col-md-12 ">
             <div

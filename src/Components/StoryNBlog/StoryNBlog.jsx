@@ -22,7 +22,7 @@ const StoryNBlog = () => {
           <div className="col-md-6">
             <div className="second-img position-relative">
               <img className=" w-100" src={firstImg} alt="" />
-             <Link className="StoryWord">
+             <Link className="StoryWord" to="/blog">
               <h2 className="our-blog">Our Blog</h2>
              </Link>
             </div>

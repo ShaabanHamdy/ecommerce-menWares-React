@@ -35,3 +35,23 @@
   text-align: right;
   color: #a67a4b;
 }
+
+
+
+@media screen and (max-width: 990px) and (min-width: 770px) {
+  .footer-container {
+font-size: 15px;
+  }
+  
+}
+/* //================================= */
+@media screen and (max-width: 770px) {
+  .footer-container {
+    margin-top: 50px;
+  }
+  .smallDiv {
+    text-align: center;
+   font-size: 15px;
+  }
+  
+}

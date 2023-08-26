@@ -1,24 +1,61 @@
-.side {
-  position: fixed !important;
-  right: -350px;
-  width: 350px;
-  background-color: #fff;
-  top: 0;
-  bottom: 0;
-  z-index: 999 !important;
-  color: #000;
-  overflow: scroll;
-}
-.CheckOrder {
-  margin-top: 150px;
+.fa-xmark:hover {
+  cursor: pointer;
+  transition: all 0.5s;
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
 }
 
-.fa-trash-can {
-  cursor: pointer;
+.divBtnCart {
+  font-size: 14px;
+  background-color: #f0f0f0;
+  color: #000;
+  margin-bottom: 10px;
+  border: 2px solid #f0f0f0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
-.bothTrashNum {
+
+.orderRow {
+  margin-top: 150px !important;
+}
+.allCol {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  height: 100%;
+}
+
+.decInCol {
+  text-align: center;
+}
+
+
+@media screen and (max-width: 768px) and (min-width: 300px) {
+  .CheckOrderImg {
+    max-width: 50% !important;
+  }
+
+  .divBtnCart {
+    width: 40%;
+    margin: auto;
+  }
+  .titleCheck {
+    margin: 20px;
+  }
+  .numPrice {
+    margin: 20px;
+  }
+  .allCol {
+    display: block;
+    text-align: center;
+  }
 }

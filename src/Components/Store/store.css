@@ -1,0 +1,108 @@
+.Story-Container {
+  background-color: #f0f0f0;
+  padding: 50px;
+}
+.story-text {
+  color: #861802;
+  letter-spacing: 5px;
+}
+.story-card {
+  height: 500px !important;
+  text-align: center;
+  cursor: pointer;
+}
+.story-title {
+  height: 70px !important;
+}
+.widthStoryImage {
+  width: 75% !important;
+}
+
+.btnStory {
+  border: #861802 !important;
+  background-color: #861802 !important;
+}
+
+.btnStory:hover {
+  background-color: #da310f !important;
+  transform: scale(1.1);
+  transition: all 0.5s;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.quickView {
+  text-align: center;
+  font-size: 20px !important;
+  font-weight: 700;
+  color: #fff;
+  background-color: rgba(87, 25, 25, 0.6);
+  position: absolute;
+  bottom: 30%;
+  opacity: 0;
+  width: 100%;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.card:hover .quickView {
+  opacity: 1;
+  bottom: 36.5%;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 990px) {
+  .Story-col {
+    width: 30% !important;
+  }
+  .widthStoryImage {
+    width: 70% !important;
+  }
+  .card:hover .quickView {
+    bottom: 36.5%;
+  }
+}
+
+@media screen and (max-width: 990px) and (min-width: 700px) {
+  .widthStoryImage {
+    width: 70% !important;
+  }
+  .Story-col {
+    width: 50% !important;
+  }
+  .card:hover .quickView {
+    bottom: 36.5%;
+  }
+}
+/* ================================================================== */
+@media screen and (max-width: 700px) and (min-width: 500px) {
+  .Story-col {
+    width: 80% !important;
+  }
+  .widthStoryImage {
+    width: 70% !important;
+  }
+  .card:hover .quickView {
+    bottom: 36.5%;
+  }
+}
+/* //================================= */
+@media screen and (max-width: 400px) {
+  .widthStoryImage {
+    width: 80% !important;
+  }
+  .story-text {
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+  }
+  .card:hover .quickView {
+    bottom: 36.5%;
+  }
+}

@@ -37,7 +37,6 @@
 
 .quickView {
   text-align: center;
-  /* padding: 8px; */
   font-size: 20px !important;
   font-weight: 700;
   color: #fff;
@@ -87,10 +86,10 @@
 /* ================================================================== */
 @media screen and (max-width: 700px) and (min-width: 500px) {
   .Featured-col {
-    width: 60% !important;
+    width: 90% !important;
   }
   .widthImage {
-    width: 80% !important;
+    width: 70% !important;
   }
   .card:hover .quickView {
     bottom: 36.5%;
@@ -98,9 +97,7 @@
 }
 /* //================================= */
 @media screen and (max-width: 400px) {
-  .Featured-Container {
-    padding: 10px !important;
-  }
+  
   .widthImage {
     width: 80% !important;
   }

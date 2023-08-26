@@ -33,16 +33,29 @@
 }
 .zeroNav {
   position: absolute;
-  left: 11px;
-  padding: 5px 4px !important;
-  font-size: 20px !important;
+  left: 0px;
+  top: 16px;
+  color: #9a351e !important;
+  cursor: pointer;
+}
+.UpZeroNav{
+  position: absolute;
+  left: -2px;
+  top: 20px;
+  color: #9a351e !important;
+  cursor: pointer;
+}
+.moreThan99{
+  position: absolute;
+  left: -2px;
   top: 30px;
   color: #9a351e !important;
   cursor: pointer;
 }
 
-
-
+.upBS{
+  font-size: 35px;
+}
 @media screen and (max-width: 990px) {
   .navbar-expand-lg {
     height: fit-content;
@@ -50,5 +63,21 @@
   #navbar-button {
     background-color: #a12b10;
     margin-right: 15px;
+  }
+  .upBS{
+    font-size: 35px !important;
+  }
+  .UpZeroNav{
+    top: 20px;
+    left: -4px;
+    font-size: 10px !important;
+  }
+  /* ==================== */
+  .zeroNav{
+    top: 17px;
+  }
+  .moreThan99{
+    top: 30px;
+    left: -1px;
   }
 }

@@ -17,7 +17,7 @@ const FeaturedProducts = () => {
             <div key={index} className="col-md-2  Featured-col  ">
               <div className="card ">
                 <Card className="CartDiv">
-                  <Link to="/ViewCart">
+                  <Link to={`/ViewCart/${product._id}/${product.title}`}>
                     <Card.Img
                       height={300}
                       className="widthImage"

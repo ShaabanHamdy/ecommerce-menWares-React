@@ -1,0 +1,92 @@
+.containerBlog {
+  margin: 70px !important;
+}
+.cardBlog {
+  border: 1px solid !important;
+  max-height: 400px !important;
+  cursor: auto !important;
+}
+
+.small {
+  padding: 5px;
+  font-size: 11px !important;
+}
+.text-title {
+  height: 45px !important;
+}
+
+.text-title:hover {
+  color: rgb(183, 129, 82) !important;
+}
+
+/* ================================================================== */
+@media screen and (max-width: 1400px) and (min-width: 1200px) {
+  .cardBlog {
+    max-height: 370px !important;
+  }
+
+  .text-title {
+    height: 70px !important;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 990px) {
+  .cardBlog {
+    max-height: 350px !important;
+  }
+
+  .text-title {
+    height: 70px !important;
+  }
+  .containerBlog {
+    margin: 40px !important;
+  }
+}
+
+@media screen and (max-width: 995px) and (min-width: 768px) {
+  .cardBlog {
+    max-height: 350px !important;
+  }
+  .text-title {
+    font-size: 18px !important;
+    height: 70px !important;
+  }
+  .DEV-COL {
+    padding: 0px !important;
+  }
+  .containerBlog {
+    margin: auto !important;
+  }
+}
+
+/* ================================================ */
+@media screen and (max-width: 768px) and (min-width: 500px) {
+  .cardBlog {
+    max-height: 450px !important;
+  }
+  .containerBlog {
+    margin: auto !important;
+  }
+}
+/* ================================================= */
+@media screen and (max-width: 540px) and (min-width: 450px) {
+  .cardBlog {
+    max-height: 420px !important;
+  }
+  .containerBlog {
+    margin: auto !important;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .text-title {
+    font-size: 18px !important;
+    height: 60px !important;
+  }
+  .cardBlog {
+    max-height: 360px !important;
+  }
+  .containerBlog {
+    margin: auto !important;
+  }
+}
