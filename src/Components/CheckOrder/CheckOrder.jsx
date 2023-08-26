@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
+import Swal from "sweetalert2";
 import { ContainerContext } from "../context/context";
 import "./CheckOrder.css";
-import Swal from "sweetalert2";
 const CheckOrder = () => {
   const { decrement, addToSideCart, clickBtnStore, removeCart } =
     useContext(ContainerContext);

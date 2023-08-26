@@ -1,10 +1,9 @@
 import React from "react";
 import CarouselHome from "../CarouselHome/CarouselHome";
-
-import StoryNBlog from "../StoryNBlog/StoryNBlog";
 import FeaturedProducts from "../FeaturedProducts/FeaturedProducts";
 import OurTops from "../OurTops/OurTops";
 import SecuredPayments from "../SecuredPayments/SecuredPayments";
+import StoryNBlog from "../StoryNBlog/StoryNBlog";
 
 const Home = () => {
   return (

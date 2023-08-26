@@ -1,11 +1,11 @@
 import axios from "axios";
 import Joi from "joi";
-import React, {useState } from "react";
+import React, { useState } from "react";
 // import { useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { ClipLoader } from "react-spinners";
 // import { AuthNoteContext } from "../Context/AuthNoteContext/AuthNoteContext";
-import "./login.css"
+import "./login.css";
 export const Login = () => {
   // const { saveUserData } = useContext(AuthNoteContext);
   // const d = useSelector((state) => state.authSlice);
@@ -88,7 +88,7 @@ export const Login = () => {
         err?.message.includes(parameters)
       );
 
-      if (x[0] !== undefined && errBackMessage.length == 0) {
+      if (x[0] !== undefined && errBackMessage.length === 0) {
         return <div className="alert bg-danger text-white p-1 mt-2 ">{x[0].message}</div>;
       }
     }

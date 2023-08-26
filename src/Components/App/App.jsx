@@ -2,13 +2,13 @@ import React from "react";
 import { createHashRouter, RouterProvider } from "react-router-dom";
 import About from "../About/About";
 import Blog from "../Blog/Blog";
-import Home from "../Home/Home";
-import Master from "../Master/Master";
-import Store from "../Store/Store";
 import CheckOrder from "../CheckOrder/CheckOrder";
-import ViewCart from "../ViewCart/ViewCart";
-import { Register } from "../Register/Register";
+import Home from "../Home/Home";
 import { Login } from "../login/Login";
+import Master from "../Master/Master";
+import { Register } from "../Register/Register";
+import Store from "../Store/Store";
+import ViewCart from "../ViewCart/ViewCart";
 
 export default function App() {
   let routes = createHashRouter([
@@ -18,6 +18,7 @@ export default function App() {
       errorElement: <p>NotFound</p>,
       children: [
         { index: true, element: <Home /> },
+        { path: "store", element: <Store /> },
         { path: "store", element: <Store /> },
         { path: "login", element: <Login /> },
         { path: "register", element: <Register /> },

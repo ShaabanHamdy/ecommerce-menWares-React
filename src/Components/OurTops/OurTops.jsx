@@ -1,8 +1,8 @@
 import React from "react";
-import ourShoes from "../images/OurShoes.png";
 import OurBag from "../images/OurBag.png";
 import OurPerson from "../images/OurPerson.png";
-import './ourTops.css'
+import ourShoes from "../images/OurShoes.png";
+import './ourTops.css';
 
 
 

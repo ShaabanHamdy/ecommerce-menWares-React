@@ -3,7 +3,7 @@ import { BsArrowRepeat } from "react-icons/bs";
 import { CiLock } from "react-icons/ci";
 import { IoUmbrellaOutline } from "react-icons/io5";
 
-import './securedPayments.css'
+import './securedPayments.css';
 
 const SecuredPayments = () => {
   return (

@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
-import React, { useContext, useEffect, useMemo, useState } from "react";
+import React, { useContext } from "react";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
 import { ContainerContext } from "../context/context";
 import "./SideCart.css";
-import Swal from "sweetalert2";
 const SideCart = () => {
   const {
     decrement,

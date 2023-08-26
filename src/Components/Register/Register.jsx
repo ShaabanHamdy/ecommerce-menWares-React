@@ -3,7 +3,7 @@ import Joi from "joi";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { ClipLoader } from "react-spinners";
-import "./register.css"
+import "./register.css";
 export const Register = () => {
   const [isLoading, setIsLoading] = useState(false);
 
@@ -87,7 +87,7 @@ export const Register = () => {
   //===================================================== function show  FrontEnd messages
 
   const showErrFrontMag = (parameters) => {
-    if (errFrontMessage?.length & (errBackMessage.length == 0)) {
+    if (errFrontMessage?.length & (errBackMessage.length === 0)) {
       let x = errFrontMessage.filter((err) => err.message.includes(parameters));
 
       if (x[0] !== undefined) {

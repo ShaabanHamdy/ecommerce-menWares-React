@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { BsBag } from "react-icons/bs";
 import { IoPersonCircleSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import SideCart from "../SideCart/SideCart";
 import { ContainerContext } from "../context/context";
 import logo from "../images/logo.svg";
 import "./Navbar.Modules.css";
@@ -12,14 +13,15 @@ const Navbar = () => {
 
   return (
     <>
+    <SideCart />
       <div className="NavContainer bg-danger">
         <nav className=" navbar navbar-expand-lg navbar-light">
           <div className="container  mb-2">
             <div className="logo-img ">
-              <a className="navbar-brand ">
+              <Link  to="/" className="navbar-brand ">
                 <img className="w-25" src={logo} alt="" />
                 <p className="logo">Giovanni Menswear</p>
-              </a>
+              </Link>
             </div>
 
             <button

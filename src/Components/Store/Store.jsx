@@ -6,7 +6,7 @@ import { ContainerContext } from "../context/context";
 import "./store.css";
 
 const Store = () => {
-  const { viewCart, clickBtnStore, apiData } = useContext(ContainerContext);
+  const {  clickBtnStore, apiData } = useContext(ContainerContext);
   return (
     <>
       <div className="container-fluid  Story-Container">

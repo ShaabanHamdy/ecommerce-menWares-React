@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import Card from "react-bootstrap/Card";
-import { BiDotsVerticalRounded, BiMessage } from "react-icons/bi";
 import { AiOutlineHeart } from "react-icons/ai";
+import { BiDotsVerticalRounded, BiMessage } from "react-icons/bi";
+import "./blog.css";
 import img1 from "./images blog/9c608a_09eeecf05f094ef393d597f128345d08-mv2_d_5616_3744_s_4_.jpeg";
 import img2 from "./images blog/9c608a_73a80edd1eb542c5868be1c0e538051b-mv2_d_5078_3519_s_4_.jpeg";
 import img3 from "./images blog/9c608a_83dee5bbdeb340e1999bae1a9cb780ce-mv2_d_5184_3456_s_4_.jpeg";
 import img4 from "./images blog/9c608a_83e689e9f9534afdb1a61fe53cac8cbc-mv2_d_5400_3807_s_4_.jpeg";
 import img5 from "./images blog/9c608a_b2433041ccaf4e2abe92148a32c53088-mv2_d_1875_1500_s_2.jpeg";
 import img6 from "./images blog/9c608a_d90e57d1e9c74ac6aca04a7a3b72c505-mv2_d_4000_3865_s_4_.jpeg";
-import "./blog.css";
 
 const Blog = () => {
   return (

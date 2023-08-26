@@ -1,6 +1,5 @@
 import axios from "axios";
 import { createContext, useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
 
 export let ContainerContext = createContext(null);
 
@@ -45,16 +44,12 @@ export default function ContainerContextProvider(props) {
 
   }
 
-const [qntNum , setQntNum] = useState(0)
   // ====================================================================================
   const clickBtnStore = (item) => {
-    let exist = addToSideCart.find((elm) => elm._id == item._id);
-    
-    setQntNum(exist?.quantity)
-    // console.log(qntNum);
+    let exist = addToSideCart.find((elm) => elm._id === item._id);    
     if (exist) {
         let cart = addToSideCart.map((elm) =>
-          elm._id == item._id ? { ...exist, quantity: exist.quantity + 1 } : elm,
+          elm._id === item._id ? { ...exist, quantity: exist.quantity + 1 } : elm,
         );
         setAddToSideCart(cart);
         localStorage.setItem("TOKEN", JSON.stringify(cart))
@@ -71,10 +66,10 @@ const [qntNum , setQntNum] = useState(0)
 
   const clickBtnViewCart = (item) => {
     if (val < 100) {
-      let exist = addToSideCart.find((elm) => elm._id == item._id);
+      let exist = addToSideCart.find((elm) => elm._id === item._id);
       if (exist) {
         let cart = addToSideCart.map((elm) =>
-          elm._id == item._id ? { ...exist, quantity: exist.quantity = + val } : elm,
+          elm._id === item._id ? { ...exist, quantity: exist.quantity = + val } : elm,
         );
         setAddToSideCart(cart);
         localStorage.setItem("TOKEN", JSON.stringify(cart))

@@ -1,7 +1,7 @@
-import React, { useContext, useEffect, useRef, useState } from "react";
-import "./ViewCart.css";
-import { ContainerContext } from "../context/context";
+import React, { useContext, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
+import { ContainerContext } from "../context/context";
+import "./ViewCart.css";
 
 const ViewCart = () => {
   let prams = useParams();
@@ -9,6 +9,7 @@ const ViewCart = () => {
   
   useEffect(() => {
     viewCart(prams);
+     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

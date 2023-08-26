@@ -1,8 +1,8 @@
 import React from "react";
-import firstImg from "../images/story.jpg";
-import secondImg from "../images/blog.jpg";
 import { Link } from "react-router-dom";
-import './StoryNBlog.css'
+import secondImg from "../images/blog.jpg";
+import firstImg from "../images/story.jpg";
+import './StoryNBlog.css';
 const StoryNBlog = () => {
   return (
     <>
