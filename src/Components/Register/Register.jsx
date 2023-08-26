@@ -80,7 +80,7 @@ export const Register = () => {
     if (errBackMessage?.length) {
       let x = errBackMessage.filter((err) => err?.message?.includes(parameter));
       if (x[0] !== undefined) {
-        return <div className="alert bg-danger p-1 mt-2">{x[0].message}</div>;
+        return <div className="alert bg-danger text-white p-1 mt-2">{x[0].message}</div>;
       }
     }
   };
@@ -91,7 +91,7 @@ export const Register = () => {
       let x = errFrontMessage.filter((err) => err.message.includes(parameters));
 
       if (x[0] !== undefined) {
-        return <div className="alert bg-danger p-1 mt-2">{x[0].message}</div>;
+        return <div className="alert bg-danger text-white p-1 mt-2">{x[0].message}</div>;
       }
     }
   };

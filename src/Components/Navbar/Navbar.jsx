@@ -23,7 +23,7 @@ const Navbar = () => {
             </div>
 
             <button
-              className="navbar-toggler"
+              className="navbar-toggler buttton"
               type="button"
               id="navbar-button"
               data-bs-toggle="collapse"
@@ -32,7 +32,7 @@ const Navbar = () => {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span className="navbar-toggler-icon "></span>
+              <span className="navbar-toggler-icon"></span>
             </button>
             <div
               className="collapse navbar-collapse  "

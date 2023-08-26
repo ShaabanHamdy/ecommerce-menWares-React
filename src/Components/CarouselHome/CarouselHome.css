@@ -9,7 +9,7 @@
   letter-spacing: 4px;
   color: #ffffff !important;
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 30%;
 }
 
@@ -74,9 +74,12 @@
   }
 }
 @media screen and (max-width: 400px) {
+  .allImag{
+    height: 350px;
+  }
   .textHome-div {
     font-size: 20px;
-    top: 30%;
+    top: 45%;
     letter-spacing: 1px;
   }
   .container-Home {

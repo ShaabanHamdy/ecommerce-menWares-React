@@ -89,7 +89,7 @@ export const Login = () => {
       );
 
       if (x[0] !== undefined && errBackMessage.length == 0) {
-        return <div className="text-danger  m-2 ">{x[0].message}</div>;
+        return <div className="alert bg-danger text-white p-1 mt-2 ">{x[0].message}</div>;
       }
     }
   };

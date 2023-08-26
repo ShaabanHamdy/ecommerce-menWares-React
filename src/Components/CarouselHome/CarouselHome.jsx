@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import sora from "../images/84770f_7df7023f44414ed6baa90326715a4cfa-mv2 .jpg";
 import sora2 from "../images/84770f_8b58055267a2498ab2cba4b2386eb5f2-mv2 .jpg";
 import sora3 from "../images/84770f_b0d1ca3c05e149bba7b5162140ff3356-mv2 .jpg";
-import './CarouselHome.css'
+import "./CarouselHome.css";
 
 const CarouselHome = () => {
   return (
@@ -18,10 +18,16 @@ const CarouselHome = () => {
             >
               <div className="carousel-inner ">
                 <div className="carousel-item active">
-                  <img src={sora} className="d-block w-100 allImag" alt="..." />
+                  <img
+                    
+                    src={sora}
+                    className="d-block w-100 allImag"
+                    alt="..."
+                  />
                 </div>
                 <div className="carousel-item">
                   <img
+                    
                     src={sora2}
                     className="d-block w-100  allImag"
                     alt="..."
@@ -29,6 +35,7 @@ const CarouselHome = () => {
                 </div>
                 <div className="carousel-item">
                   <img
+                    
                     src={sora3}
                     className="d-block w-100 allImag"
                     alt="..."

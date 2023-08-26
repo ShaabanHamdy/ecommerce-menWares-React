@@ -10,7 +10,9 @@
   z-index: 999;
   background-color: #fff !important;
 }
-
+.buttton{
+  color: #9a351e !important;
+}
 .nav-link {
   margin-left: 20px;
   color: #000000 !important;
@@ -60,10 +62,14 @@
   .navbar-expand-lg {
     height: fit-content;
   }
+
   #navbar-button {
-    background-color: #a12b10;
+    background-color: #eae3e1;
     margin-right: 15px;
   }
+  
+
+
   .upBS{
     font-size: 35px !important;
   }
