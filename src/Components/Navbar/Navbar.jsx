@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import { BsBag } from "react-icons/bs";
 import { IoPersonCircleSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
-import SideCart from "../SideCart/SideCart";
 import { ContainerContext } from "../context/context";
 import logo from "../images/logo.svg";
 import "./Navbar.Modules.css";
@@ -13,7 +12,6 @@ const Navbar = () => {
 
   return (
     <>
-    <SideCart />
       <div className="NavContainer bg-danger">
         <nav className=" navbar navbar-expand-lg navbar-light">
           <div className="container  mb-2">
