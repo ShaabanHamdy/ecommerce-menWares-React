@@ -14,7 +14,7 @@ const ViewCart = () => {
 
   return (
     <>
-      <div className="container min-vh-100  bg-success viewContainer">
+      <div className="container min-vh-100  viewContainer">
         <div className="row">
           <div className="col-md-5 viewCol">
             <div className="CartImage  text-center">
